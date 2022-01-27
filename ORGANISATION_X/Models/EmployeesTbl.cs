@@ -8,7 +8,7 @@ namespace ORGANISATION_X.Models
     {
         [Required]public int Age { get; set; }
         public string Attrition { get; set; }
-        public string BusinessTravel { get; set; }
+        public string BusinessTravel { get; set; } 
         public int? DailyRate { get; set; }
         [Required]public string Department { get; set; }
         public string DistanceFromHome { get; set; }
