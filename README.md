@@ -1,4 +1,5 @@
 # Employee-Management-System
 ASP.NET CORE MVC PROJECT
 
-![My Remote Image](https://www.dropbox.com/s/f4yzanv33l6u9r6/Capture2022.PNG?dl=0)
+![Capture2022](https://user-images.githubusercontent.com/61046765/151399562-562fa8ee-7bb7-4420-9182-a2e47b84091c.PNG)
+
