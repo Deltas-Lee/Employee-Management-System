@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <p class="highcharts-description">
+        This column chart depicts the real-time data of the employees according to their Job Roles in the company.
+    </p>
+</figure>
+
+<script>
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Employees Job Roles Categorisation'
+        },
+        xAxis: {
+            categories: ['Sales Representative', 'Sales Executive', 'Research Scientist', 'Research Director', 'Manufacturing Director', 'Manager', 'Laboratory Technician', 'Human Resources', 'Health Representative']
+        },
+        yAxis: {
+            title: {
+                text: 'Number of Employees'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Male',
+            data: [180, 294, 301, 320, 350, 295, 265, 253, 191]
+        }, {
+            name: 'Female',
+            data: [199, 265, 280, 290, 320, 300, 273, 265, 210]
+        }]
+    });
+</script>
